@@ -20,6 +20,7 @@ a:hover {
 .no-padding {
   padding: 0;
 }
+
 /*********************************************
 NAV
 *********************************************/
@@ -129,18 +130,20 @@ RESOURCES
   background-color: rgba(255, 255, 255, 0.5);
 }
 
+.resources > div {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .resources h4{
   color: #777;
   margin-bottom: 1.8rem;
 }
 
 .resources h5 {
+  margin-top: 1.8rem;
   margin-bottom: 1.4rem;
   color: #777;
-}
-
-.resources h5 {
-  margin-top: 1.8rem;
 }
 
 .resources ul {
@@ -165,6 +168,7 @@ RESOURCES
 .resources .center {
   display: block;
   margin: 1rem auto 2rem;
+  background-color: #3367d6;
 }
 
 /*********************************************
@@ -197,7 +201,6 @@ footer {
   width: 90%;
   margin: 3rem auto 1rem;
   padding-bottom: 3rem;
-  border-bottom: 1px solid #aaa;
 }
 
 .footer-form h3 {
@@ -230,6 +233,9 @@ footer {
 
 .google-links {
   padding: 1rem 1rem 2rem;
+  border-top: 1px solid #aaa;
+  width: 90%;
+  margin: auto;
 }
 
 .social-links a {
@@ -248,4 +254,68 @@ footer {
   display: inline-block;
   font-size: 1.4rem;
   margin-right: 1rem;
+}
+
+/*********************************************
+FOOTER
+*********************************************/
+
+@media screen and (min-width: 600px) {
+  nav h1 {
+    font-size: 2.7rem;
+    font-weight: 400;
+  }
+
+  .no-padding {
+    display: flex;
+  }
+
+  .card {
+    flex-direction: column;
+    flex: 1;
+    margin: 1rem;
+    padding: 0;
+    text-align: center;
+  }
+
+  img.card-img-top {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;;
+    object-fit: cover;
+  }
+
+  .resources h5 {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+  .col-sm-12.marketers {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .footer-form {
+    width: 70%;
+  }
+
+  .google-links p {
+    margin: 1rem 0 1rem 1rem;
+    display: inline-block;
+    margin-right: 40%;
+  }
+
+  .social-icons {
+    display: inline-block;
+  }
+
+}
+
+@media screen and (min-width: 1000px) {
+  .navbar {
+    background-image: url('../img/nav-bg.jpg');
+    height: 400px;
+    background-position: 41%;
+  }
 }
