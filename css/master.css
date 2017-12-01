@@ -1,10 +1,47 @@
 body {
   display: flex;
   flex-direction: column;
+  background-color: #f5f5f5;
 }
 
 .row {
   flex: 1;
+  margin: 1.1rem auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+.no-padding {
+  padding: 0;
+}
+/*********************************************
+NAV
+*********************************************/
+nav h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding-right: 6rem;
+  color: #585858;
+  margin: 1rem 1rem 3rem;
+}
+
+.navbar {
+  justify-content: end;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.google {
+  width: 95px;
+  height: 70px;
+}
+
+.navbar-brand {
+  padding: 0;
 }
 
 /*********************************************
@@ -13,15 +50,67 @@ HERO
 
 .hero {
   background:  -webkit-linear-gradient(to bottom, rgba(218, 218, 218, 0.5), rgba(39, 64, 70, 0.5));
-  background-image:linear-gradient(to bottom, rgba(218, 218, 218, 0.5), rgba(39, 64, 70, 0.5)), url('../img/main-banner.jpg');
-  padding: 3rem 2rem 2rem;
+  background-image: linear-gradient(to bottom, rgba(206, 206, 206, 0.1), rgba(54, 41, 50, 0.5)), url(../img/main-banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 3rem 1rem 2rem;
+  box-shadow: 0px 3px 20px #888;
+}
+
+.hero-title {
+  margin-top: 9.6rem;
 }
 
 .hero p {
   color: #fff;
-  font-size: 1.3rem;
+  font-size: 1.12rem;
+  font-weight: 500;
 }
 
 p.date {
-  font-size: 1rem;
+  font-size: .97rem;
+  margin: 0;
+  font-weight: 400;
+}
+
+/*********************************************
+MAIN
+*********************************************/
+.card {
+  flex-direction: row;
+  padding: 0.8rem 0 0 0.8rem;
+  box-shadow: 0px 3px 10px #888;
+  margin-bottom: 1rem;
+}
+
+.card-body {
+  padding: 0 0.5rem 0.5rem 0.7rem;
+}
+
+.card-text {
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+  line-height: 23px;
+  color: #888;
+}
+
+.card-body .date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 1.6rem;
+}
+
+img.card-img-top {
+  width: 35%;
+  height: 90px;
+  object-fit: cover;
+}
+
+/*********************************************
+SUB MAIN
+*********************************************/
+.sub-hero {
+  background:  -webkit-linear-gradient(to bottom, rgba(218, 218, 218, 0.5), rgba(39, 64, 70, 0.5));
+  background-image: linear-gradient(to bottom, rgba(206, 206, 206, 0.1), rgba(54, 41, 50, 0.5)), url(../img/sub-main.jpg);
 }

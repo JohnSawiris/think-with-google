@@ -2,40 +2,96 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
     <link rel="stylesheet" href="css/master.css">
-    <title></title>
+    <title>Think with Google</title>
   </head>
   <body>
     <!-- nav -->
-    <nav>
-      <div class="nav-wrapper">
-        <a href="#!" class="brand-logo">Logo</a>
-        <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons"></i></a>
-        <ul class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">Javascript</a></li>
-          <li><a href="mobile.html">Mobile</a></li>
-        </ul>
-        <ul class="side-nav" id="mobile-demo">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">Javascript</a></li>
-          <li><a href="mobile.html">Mobile</a></li>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><span>think</span> <span>with</span> <img src="img/google-icon.png" class="google" alt=""> </a>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Abouts</a>
+          </li>
         </ul>
       </div>
+      <h1>Insights you want. Data you need.</h1>
     </nav>
 
     <div class="container">
 
       <!-- HERO -->
       <div class="row hero">
-        <div class="col s12">
+        <div class="col-sm-12 hero-title">
           <p>Holiday shopper are in the driver's seat now-here's what they're looking for</p>
           <p class="date">Article-Nov 2017</p>
         </div>
       </div>
+
+      <!-- MAIN ROW -->
+      <div class="row">
+        <div class="col-sm-12 no-padding">
+          <div class="card">
+            <img class="card-img-top" src="img/card-one.jpg" alt="Super Bowl Player">
+            <div class="card-body">
+              <p class="card-text">4 pricnciples for building a Super Bowl campaign without a TV ad</p>
+              <p class="date"><i class="fa fa-suitcase" aria-hidden="true"> </i>  Case Study - Nov 2017</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 no-padding">
+          <div class="card">
+            <img class="card-img-top" src="img/card-two.jpg" alt="Network">
+            <div class="card-body">
+              <p class="card-text">How Nestle Waters reclaimed the customer relationship</p>
+              <p class="date"><i class="fa fa-suitcase" aria-hidden="true"> </i>  Case Study - Nov 2017</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 no-padding">
+          <div class="card">
+            <img class="card-img-top" src="img/card-three.jpg" alt="Shopping cart">
+            <div class="card-body">
+              <p class="card-text">Are you worth it? Your customer wants to know</p>
+              <p class="date">Perspective- Nov 2017</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-12 no-padding">
+          <div class="card">
+            <img class="card-img-top" src="img/card-four.jpg" alt="Marketing">
+            <div class="card-body">
+              <p class="card-text">3 Marketting myths we debunked by studying YouTube's audience</p>
+              <p class="date">Article- Nov 2017</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CARDS ROW END -->
+
+      <!-- SUB-MAIN -->
+      <div class="row hero sub-hero">
+        <div class="col-sm-12 hero-title">
+          <p>Holiday shopper want more help in a hurry-here's how to succeed this season</p>
+          <p class="date">Article-Oct 2017</p>
+        </div>
+      </div>
+      <!-- SUB MAIN END -->
     </div>
 
 
@@ -46,6 +102,7 @@
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
   crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   </body>
 </html>
