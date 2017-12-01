@@ -13,6 +13,10 @@ img {
   max-width: 100%;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .no-padding {
   padding: 0;
 }
@@ -113,4 +117,113 @@ SUB MAIN
 .sub-hero {
   background:  -webkit-linear-gradient(to bottom, rgba(218, 218, 218, 0.5), rgba(39, 64, 70, 0.5));
   background-image: linear-gradient(to bottom, rgba(206, 206, 206, 0.1), rgba(54, 41, 50, 0.5)), url(../img/sub-main.jpg);
+}
+
+/*********************************************
+RESOURCES
+*********************************************/
+.resources.row {
+  text-align: left;
+  padding: 3rem 0 2rem 0;
+  margin: 2rem 0 1rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.resources h4{
+  color: #777;
+  margin-bottom: 1.8rem;
+}
+
+.resources h5 {
+  margin-bottom: 1.4rem;
+  color: #777;
+}
+
+.resources h5 {
+  margin-top: 1.8rem;
+}
+
+.resources ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.resources ul li {
+  margin-top: 0.6rem;
+  font-weight: 500;
+}
+
+.resources ul li a {
+  color: #3367d6;
+}
+
+.resources ul li a:hover {
+  color: #7aa0f3;
+}
+
+.resources .center {
+  display: block;
+  margin: 1rem auto 2rem;
+}
+
+/*********************************************
+MARKETERS
+*********************************************/
+.marketers .card-body .card-text {
+  font-size: 0.9rem;
+}
+
+.link-btns .open {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 1rem;
+}
+
+.link-btns .learn {
+  font-weight: bold;
+  color: #777;
+}
+
+/*********************************************
+FOOTER
+*********************************************/
+footer {
+  background-color: #3367d6;
+  color: #fff;
+}
+
+.footer-form {
+  width: 90%;
+  margin: 3rem auto 1rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #aaa;
+}
+
+.footer-form h3 {
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.footer-form form input {
+  background-color: #3367d6;
+  color: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+}
+
+.form-check-label {
+  padding: 0;
+}
+
+.sign-up {
+  font-size: 0.9rem;
+}
+
+.subscribe-btn {
+  background-color: #fff;
+  color: #3367d6;
+  padding: 10px 15px;
+  font-weight: bold;
 }
