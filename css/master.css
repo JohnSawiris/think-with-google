@@ -4,6 +4,10 @@ body {
   background-color: #f5f5f5;
 }
 
+button {
+  cursor: pointer;
+}
+
 .row {
   flex: 1;
   margin: 1.1rem auto;
@@ -276,6 +280,7 @@ FOOTER
     margin: 1rem;
     padding: 0;
     text-align: center;
+    transition: all 0.2s ease-in;
   }
 
   img.card-img-top {
@@ -312,10 +317,47 @@ FOOTER
 
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 991px) {
   .navbar {
     background-image: url('../img/nav-bg.jpg');
-    height: 400px;
+    height: 550px;
     background-position: 41%;
+    background-repeat: repeat-x;
+    background-size: cover;
+    align-items: baseline;
+  }
+
+  nav h1 {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 40%;
+  }
+
+  .navbar-expand-lg .navbar-nav {
+    color: #777;
+    font-weight: bold;
+  }
+
+  .card:hover {
+      box-shadow: -10px -10px 40px #888,
+                  10px 10px 40px #888;
+  }
+
+  .card-body {
+    padding: 1rem 1rem 2rem;
+  }
+
+  .google-links p {
+    margin-right: 70%;
+  }
+
+  .social-icons a {
+    font-size: 2rem;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .social-icons a:hover {
+    color: #222;
   }
 }
