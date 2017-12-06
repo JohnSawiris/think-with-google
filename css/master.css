@@ -346,12 +346,26 @@ FOOTER
 }
 
 @media screen and (min-width: 991px) {
+  .flex-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  div#navbar, .logo-container {
+    flex: 0 0 auto;
+  }
+
+  div#navbar li a {
+    font-weight: 600;
+  }
+
   .navbar {
     background-image: url('../img/nav-bg.jpg');
-    height: 550px;
-    background-position: 41%;
+    height: 430px;
+    background-position: 50% 0;
     background-repeat: repeat-x;
-    background-size: cover;
+    background-size: 86% 100%;
     align-items: baseline;
   }
 
