@@ -10,7 +10,6 @@ button {
 
 .row {
   flex: 1;
-  margin: 1.1rem auto;
 }
 
 img {
@@ -21,7 +20,7 @@ a:hover {
   text-decoration: none;
 }
 
-.no-padding {
+.flex {
   padding: 0;
 }
 
@@ -57,22 +56,17 @@ nav h1 {
 HERO
 *********************************************/
 
-.hero {
+.hero-title {
   background:  -webkit-linear-gradient(to bottom, rgba(218, 218, 218, 0.5), rgba(39, 64, 70, 0.5));
   background-image: linear-gradient(to bottom, rgba(206, 206, 206, 0.1), rgba(54, 41, 50, 0.5)), url(../img/main-banner.jpg);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
-  padding: 3rem 1rem 2rem;
-  box-shadow: 0px 3px 20px #888;
-}
-
-.hero-title {
-  margin-top: 9.6rem;
+  background-position: 50% 0%;
+  padding: 6em 4em;
+  color: #fff;
 }
 
 .hero p {
-  color: #fff;
   font-size: 1.12rem;
   font-weight: 500;
 }
@@ -89,8 +83,7 @@ MAIN
 .card {
   flex-direction: row;
   padding: 0.8rem 0 0 0.8rem;
-  box-shadow: 0px 3px 10px #888;
-  margin-bottom: 1rem;
+  margin: 1% 0;
 }
 
 .card-body {
@@ -122,6 +115,11 @@ SUB MAIN
 .sub-hero {
   background:  -webkit-linear-gradient(to bottom, rgba(218, 218, 218, 0.5), rgba(39, 64, 70, 0.5));
   background-image: linear-gradient(to bottom, rgba(206, 206, 206, 0.1), rgba(54, 41, 50, 0.5)), url(../img/sub-main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+  padding: 6em 4em;
+  color: #fff;
 }
 
 /*********************************************
@@ -169,7 +167,7 @@ RESOURCES
   color: #7aa0f3;
 }
 
-.resources .center {
+.center {
   display: block;
   margin: 1rem auto 2rem;
   background-color: #3367d6;
@@ -264,21 +262,33 @@ footer {
 FOOTER
 *********************************************/
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 576px) {
   nav h1 {
     font-size: 2.7rem;
     font-weight: 400;
   }
 
-  .no-padding {
+  .container {
+    max-width: 628px;
+  }
+
+  .hero-title, .sub-hero {
+    margin: 1% 0;
+  }
+
+  .flex {
     display: flex;
+  }
+
+  .hero {
+    padding: 0;
   }
 
   .card {
     flex-direction: column;
     flex: 1;
-    margin: 1rem;
     padding: 0;
+    margin: 2%;
     text-align: center;
     transition: all 0.2s ease-in;
   }
@@ -296,7 +306,7 @@ FOOTER
     font-weight: 400;
   }
 
-  .col-sm-12.marketers {
+.marketers {
       display: flex;
       flex-wrap: wrap;
   }
@@ -317,6 +327,24 @@ FOOTER
 
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 840px;
+  }
+
+  .hero-title, .sub-hero {
+    margin: 0;
+  }
+
+  .card {
+    margin: 2%;
+  }
+  .marketer-header {
+    padding-left: .15em;
+    margin: 2rem 0;
+  }
+}
+
 @media screen and (min-width: 991px) {
   .navbar {
     background-image: url('../img/nav-bg.jpg');
@@ -325,6 +353,18 @@ FOOTER
     background-repeat: repeat-x;
     background-size: cover;
     align-items: baseline;
+  }
+
+  .container {
+    max-width: 1400px;
+  }
+
+  .row {
+    margin: 1rem 0;
+  }
+
+  .card {
+    margin: 0 2%;
   }
 
   nav h1 {
@@ -339,13 +379,11 @@ FOOTER
     font-weight: bold;
   }
 
-  .card:hover {
-      box-shadow: -10px -10px 40px #888,
-                  10px 10px 40px #888;
-  }
-
   .card-body {
     padding: 1rem 1rem 2rem;
+  }
+  .google-links {
+    width: 80%;
   }
 
   .google-links p {
@@ -359,5 +397,9 @@ FOOTER
 
   .social-icons a:hover {
     color: #222;
+  }
+
+  .footer-form {
+    width: 40%;
   }
 }
