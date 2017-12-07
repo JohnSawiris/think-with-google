@@ -27,20 +27,65 @@ a:hover {
 /*********************************************
 NAV
 *********************************************/
-nav h1 {
-  font-size: 1.5rem;
-  font-weight: 400;
-  padding-right: 6rem;
-  color: #585858;
-  margin: 1rem 1rem 3rem;
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
-.navbar {
-  justify-content: end;
+.navigation-bar a {
+  color: #424242c2;
+  font-weight: 600;
 }
 
-.navbar-toggler {
-  border: none;
+.nav-links {
+  width: 42.6%;
+  height: 100vh;
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #111111db;
+  padding-top: 3rem;
+  transition: all .5s ease-in-out;
+  display: none;
+}
+
+.nav-links a {
+  padding: 1rem 8rem;
+  display: block;
+  color: #f5f5f5;
+  transition: .5s ease-in;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.close-btn {
+  width: 34px;
+  height: 10px;
+  padding: .5rem;
+  position: absolute;
+  top: 16px;
+  right: 20px;
+}
+
+.close-btn span {
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+.close-btn span:nth-child(1) {
+  transform: rotate(135deg);
+}
+
+.close-btn span:nth-child(2) {
+  transform: rotate(-135deg);
 }
 
 .google {
@@ -48,9 +93,56 @@ nav h1 {
   height: 70px;
 }
 
-.navbar-brand {
-  padding: 0;
+.logo-container {
+  margin-left: 2rem;
 }
+
+.nav-bar-btn {
+  width: 50px;
+  height: 16px;
+  position: relative;
+  transition: .5s ease-in-out;
+  order: 2;
+  margin-right: 2rem;
+}
+
+.nav-bar-btn span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-radius: 3px;
+  background-color: #424242c2;
+  transition: .6s ease-in-out;
+}
+
+.nav-bar-btn span:nth-child(1) {
+  top: 0;
+}
+
+.nav-bar-btn.click span:nth-child(1) {
+  top: 10px;
+  transform: rotate(135deg);
+}
+
+.nav-bar-btn span:nth-child(2) {
+  top: 10px;
+}
+
+.nav-bar-btn.click span:nth-child(2) {
+  left: -40px;
+  opacity: 0;
+}
+
+.nav-bar-btn span:nth-child(3) {
+  top: 20px;
+}
+
+.nav-bar-btn.click span:nth-child(3) {
+  top: 10px;
+  transform: rotate(-135deg);
+}
+
 
 /*********************************************
 HERO
@@ -263,11 +355,6 @@ FOOTER
 *********************************************/
 
 @media screen and (min-width: 576px) {
-  nav h1 {
-    font-size: 2.7rem;
-    font-weight: 400;
-  }
-
   .container {
     max-width: 628px;
   }
@@ -346,27 +433,48 @@ FOOTER
 }
 
 @media screen and (min-width: 991px) {
-  .flex-nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-  }
-
-  div#navbar, .logo-container {
-    flex: 0 0 auto;
-  }
-
-  div#navbar li a {
-    font-weight: 600;
-  }
-
-  .navbar {
+  .navigation-bar {
+    justify-content: space-between;
     background-image: url('../img/nav-bg.jpg');
-    height: 430px;
-    background-position: 50% 0;
-    background-repeat: repeat-x;
-    background-size: 86% 100%;
-    align-items: baseline;
+    background-repeat: no-repeat;
+    background-size: 102% 104%;
+    background-position: 50% 43%;
+    height: 440px;
+    color: #424242c2;
+  }
+
+  .logo-container {
+    margin-left: 2rem;
+  }
+
+  .nav-links {
+    display: block;
+    width: auto;
+    height: auto;
+    position: unset;
+    background: none;
+    padding: 0;
+    margin-right: 5rem;
+  }
+
+  .navbar-brand span {
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  .nav-links a {
+    display: inline-flex;
+    padding: 1rem;
+    color: #424242c2;
+    transition: .5s ease-in-out;
+  }
+
+  .nav-links a:hover {
+    background-color: #f5f5f5;
+  }
+
+  .close-btn, .nav-bar-btn {
+    display: none;
   }
 
   .container {
