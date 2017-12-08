@@ -2,6 +2,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #f5f5f5;
+  transition: margin-right .4s ease-in-out;
 }
 
 button {
@@ -39,20 +40,22 @@ NAV
 }
 
 .nav-links {
-  width: 42.6%;
+  width: 0;
   height: 100vh;
   z-index: 1000;
   position: fixed;
+  text-align: center;
   top: 0;
   right: 0;
+  opacity: 0;
   background-color: #111111db;
   padding-top: 3rem;
-  transition: all .5s ease-in-out;
+  transition: all .4s ease-in-out;
   display: none;
 }
 
 .nav-links a {
-  padding: 1rem 8rem;
+  padding: 1rem 2rem;
   display: block;
   color: #f5f5f5;
   transition: .5s ease-in;
@@ -68,7 +71,7 @@ NAV
   padding: .5rem;
   position: absolute;
   top: 16px;
-  right: 20px;
+  right: 30px;
 }
 
 .close-btn span {
@@ -415,6 +418,10 @@ FOOTER
 }
 
 @media screen and (min-width: 768px) {
+  .nav-links a {
+    font-size: .877rem;
+  }
+
   .container {
     max-width: 840px;
   }
@@ -453,7 +460,9 @@ FOOTER
     height: auto;
     position: unset;
     background: none;
+    opacity: 1;
     padding: 0;
+    z-index: 0;
     margin-right: 5rem;
   }
 
